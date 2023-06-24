@@ -103,3 +103,4 @@ recipeView.addHandlerOnAddBookmark(controlAddBookmark);
 searchView.addSearchHandler(controlSearchResults);
 paginationView.addHandlerClick(controlPagination);
 addRecipeView.addHandlerUpload(controlAddRecipe);
+console.log('hello');
