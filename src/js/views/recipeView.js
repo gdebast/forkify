@@ -1,5 +1,5 @@
 import icons from 'url:../../img/icons.svg'; // import the icons of the src folder such that Parcel can map it to the 'dist' folder.
-import { Fraction } from 'fractional';
+import fracty from 'fracty';
 import View from './view.js';
 
 class RecipeView extends View {
@@ -130,7 +130,7 @@ class RecipeView extends View {
             </svg>
             ${
               ing.quantity
-                ? `<div class="recipe__quantity">${new Fraction(
+                ? `<div class="recipe__quantity">${fracty(
                     ing.quantity
                   ).toString()}</div>`
                 : ''
